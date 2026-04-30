@@ -105,4 +105,3 @@ guilds = client.get_guilds()
 print(guilds)
 ```
 </div>
----
