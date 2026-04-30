@@ -4,6 +4,7 @@
 
 
 > Web-API for the [Discord](https://discord.com) user API (v9)
+</div>
 
 ---
 
@@ -15,7 +16,7 @@ from discord_user import DiscordUser
 client = DiscordUser()
 client.login("email@example.com", "password")
 ```
-
+<div align="center">
 ---
 
 ## Methods
@@ -85,7 +86,7 @@ client.login("email@example.com", "password")
 | `get_voice_regions()` | List available voice regions |
 
 ---
-
+</div>
 ## Example
 
 ```python
@@ -104,4 +105,3 @@ client.change_status(emoji_name="🔥", text="coding")
 guilds = client.get_guilds()
 print(guilds)
 ```
-</div>
