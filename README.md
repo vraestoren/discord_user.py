@@ -16,6 +16,27 @@ from discord_user import DiscordUser
 client = DiscordUser()
 client.login("email@example.com", "password")
 ```
+
+---
+## Example
+
+```python
+from discord_user import DiscordUser
+
+client = DiscordUser()
+client.login("email@example.com", "password")
+
+# Send a message
+client.send_message("Hello!", channel_id=1234567890)
+
+# Change status
+client.change_status(emoji_name="🔥", text="coding")
+
+# Get all guilds
+guilds = client.get_guilds()
+print(guilds)
+```
+
 <div align="center">
 ---
 
@@ -87,21 +108,3 @@ client.login("email@example.com", "password")
 
 ---
 </div>
-## Example
-
-```python
-from discord_user import DiscordUser
-
-client = DiscordUser()
-client.login("email@example.com", "password")
-
-# Send a message
-client.send_message("Hello!", channel_id=1234567890)
-
-# Change status
-client.change_status(emoji_name="🔥", text="coding")
-
-# Get all guilds
-guilds = client.get_guilds()
-print(guilds)
-```
